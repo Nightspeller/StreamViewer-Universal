@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>1d83b6f1-45ea-400c-ad9d-f69c42138b35</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>StreamViewer_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>B47E7495E9CC00A5EEDCC8E86387AFEA1AA14659</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\chat.css" />
+    <Content Include="css\chat.min.css" />
+    <Content Include="css\chat.styl" />
+    <Content Include="css\video-player.css" />
+    <Content Include="css\video-player.min.css" />
+    <Content Include="css\video-player.styl" />
+    <Content Include="css\controls.css" />
+    <Content Include="css\controls.min.css" />
+    <Content Include="css\controls.styl" />
+    <Content Include="css\mainScreen.css" />
+    <Content Include="css\mainScreen.min.css" />
+    <Content Include="css\mainScreen.styl" />
+    <Content Include="css\newStreams.css" />
+    <Content Include="css\newStreams.min.css" />
+    <Content Include="css\newStreams.styl" />
+    <Content Include="css\picker.css" />
+    <Content Include="css\picker.styl" />
+    <Content Include="css\streamOverview.css" />
+    <Content Include="default.html" />
+    <Content Include="fonts\Playball-latin-ext.ttf" />
+    <Content Include="fonts\Playball-latin.ttf" />
+    <Content Include="fonts\VideoJS.eot" />
+    <Content Include="fonts\VideoJS.svg" />
+    <Content Include="fonts\VideoJS.ttf" />
+    <Content Include="fonts\VideoJS.woff" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\logo_cybergame.jpg" />
+    <Content Include="images\logo_goodgame.png" />
+    <Content Include="images\logo_twitch.jpg" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\wildlife.mp4" />
+    <Content Include="js\config.js" />
+    <Content Include="js\controllers\AppController.js" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\directives\chat.js" />
+    <Content Include="js\directives\controls.js" />
+    <Content Include="js\directives\mainScreen.js" />
+    <Content Include="js\directives\videoPlayer.js" />
+    <Content Include="js\directives\picker.js" />
+    <Content Include="js\directives\streamOverview.js" />
+    <Content Include="js\newStreams.js" />
+    <Content Include="js\services\ChatService.js" />
+    <Content Include="js\services\PickerService.js" />
+    <Content Include="js\services\StreamsStateManager.js" />
+    <Content Include="js\services\TwitchAPIService.js" />
+    <Content Include="js\vendor\angular.min.js" />
+    <Content Include="js\vendor\angular.min.js.map" />
+    <None Include="Package.StoreAssociation.xml" />
+    <None Include="StreamViewer_StoreKey.pfx" />
+    <Content Include="templates\chat.html" />
+    <Content Include="templates\controls.html" />
+    <Content Include="templates\main-screen.html" />
+    <Content Include="templates\video-player.html" />
+    <Content Include="templates\picker.html" />
+    <Content Include="templates\stream-overview.html" />
+    <Content Include="WinJS\css\ui-dark.css" />
+    <Content Include="WinJS\css\ui-light.css" />
+    <Content Include="WinJS\fonts\Symbols.ttf" />
+    <Content Include="WinJS\js\en-US\ui.strings.js" />
+    <Content Include="WinJS\js\base.js" />
+    <Content Include="WinJS\js\ui.js" />
+    <None Include="StreamViewer_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.PlayerFramework.Js.UWP, Version=3.0.0.2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+﻿[
+  {
+    "outputFile": "css/controls.css",
+    "inputFile": "css/controls.styl"
+  },
+  {
+    "outputFile": "css/mainScreen.css",
+    "inputFile": "css/mainScreen.styl"
+  },
+  {
+    "outputFile": "css/newStreams.css",
+    "inputFile": "css/newStreams.styl"
+  },
+  {
+    "outputFile": "css/chat.css",
+    "inputFile": "css/chat.styl"
+  },
+  {
+    "outputFile": "css/video-player.css",
+    "inputFile": "css/video-player.styl"
+  }
+]
