@@ -4,6 +4,7 @@
             restrict: 'E',
             replace: true,
             templateUrl: 'templates/video-player.html',
+            scope: true,
             controller: function ($scope) {
                 $scope.playing = true;
                 $scope.muted = false;

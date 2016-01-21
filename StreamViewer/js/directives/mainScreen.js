@@ -26,7 +26,7 @@
                                 if (StreamsStateManager.streams[i].status === 'active') {
                                     var videoContainer = elem[0].getElementsByClassName('active')[0].querySelector('.video-player');
                                     if (videoContainer.querySelector('video')) videoContainer.removeChild(videoContainer.querySelector('video'));
-                                    videoContainer.insertBefore(StreamsStateManager.streams[i].player);
+                                    videoContainer.insertBefore(StreamsStateManager.streams[i].player, videoContainer.childNodes[0]);
                                     StreamsStateManager.streams[i].player.play();
                                     scope.activeStream = i;
                                     adjustStreams();
@@ -34,7 +34,7 @@
                                 if (StreamsStateManager.streams[i].status === 'preview') {
                                     var videoContainer = elem[0].getElementsByClassName('preview')[0].querySelector('.video-player');
                                     if (videoContainer.querySelector('video')) videoContainer.removeChild(videoContainer.querySelector('video'));
-                                    videoContainer.insertBefore(StreamsStateManager.streams[i].player);
+                                    videoContainer.insertBefore(StreamsStateManager.streams[i].player, videoContainer.childNodes[0]);
                                     StreamsStateManager.streams[i].player.play();
                                     scope.previewStream = i;
                                     adjustStreams();
@@ -46,7 +46,7 @@
                             for (var i = 0; i < 4; i++) {
                                 var videoContainer = elem[0].querySelector('#allStreams' + i).querySelector('.video-player');
                                 if (videoContainer.querySelector('video')) videoContainer.removeChild(videoContainer.querySelector('video'));
-                                if (StreamsStateManager.streams[i].player) videoContainer.insertBefore(StreamsStateManager.streams[i].player);
+                                if (StreamsStateManager.streams[i].player) videoContainer.insertBefore(StreamsStateManager.streams[i].player, videoContainer.childNodes[0]);
                             }
                         }
                         
