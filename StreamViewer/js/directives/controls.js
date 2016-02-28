@@ -40,11 +40,13 @@
                 }
 
                 $scope.showAllStreams = function () {
-                    StreamsStateManager.showAllStreams();
+                    var msgBox = new Windows.UI.Popups.MessageDialog('Feature is under development');
+                    msgBox.showAsync();
+                    //StreamsStateManager.showAllStreams();
                 }
 
                 $scope.showAbout = function () {
-                    var msgBox = new Windows.UI.Popups.MessageDialog('SreamViewer for Windows 10 by Serg Nigths. Feedback is welcomed: serj.nights@live.com');
+                    var msgBox = new Windows.UI.Popups.MessageDialog('StreamViewer for Windows 10 by Serg Nigths. Feedback is welcomed: serj.nights@live.com');
                     msgBox.showAsync();
                 }
             },

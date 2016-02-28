@@ -54,6 +54,9 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>StreamViewer_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>B47E7495E9CC00A5EEDCC8E86387AFEA1AA14659</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">

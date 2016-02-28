@@ -51,8 +51,9 @@
             link: function (scope, elem, attrs) {
                 scope.$watchCollection(function () { return StreamsStateManager.streams[scope.num] }, function (newValue, oldValue) {
                     if (newValue.status === 'overview') {
-                        var videoContainer = elem[0].getElementsByClassName('streamOverviewVideo')[0].querySelector('.video-player');
-                        if (videoContainer.querySelector('video')) videoContainer.removeChild(videoContainer.querySelector('video'));
+                        var querySelector = StreamsStateManager.playerMode === 'twitch' ? 'iframe' : 'video';
+                        var videoContainer = elem[0].getElementsByClassName('streamOverviewVideo')[0];
+                        if (videoContainer.querySelector(querySelector)) videoContainer.removeChild(videoContainer.querySelector(querySelector));
                         videoContainer.insertBefore(StreamsStateManager.streams[scope.num].player);
                     }
                 });

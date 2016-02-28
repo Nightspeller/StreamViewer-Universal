@@ -9,9 +9,8 @@
             <!--data-ng-mouseover="preview($event)" data-ng-mouseleave="preview($event)"-->
             <button type="button" title="Move to big screen" class="win-button" data-ng-class="{'pressedButton': StreamsStateManager.streams[num].status === 'active'}" data-ng-click="moveToMain()">&#xe18c;</button>
         </div>
-        <div class="streamOverviewVideo">
-            <video-player></video-player>
-        </div>
+
+        <div class="streamOverviewVideo"></div>
         <div class="additionalInfo" data-ng-show="StreamsStateManager.streams[num].info !== ''">
             <div class="name">{{StreamsStateManager.streams[num].info.display_name}}:</div>
             <!--<div>{{StreamsStateManager.streams[num].info.status}}</div>-->

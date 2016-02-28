@@ -10,10 +10,14 @@
 
                 $scope.hidePicker = function () {
                     PickerService.resetState();
+                    $scope.gameSearchInput = '';
+                    $scope.streamerSearchInput = '';
                 };
 
                 $scope.cardClicked = function (card) {
                     PickerService.setCurrentState(card.nextState);
+                    $scope.gameSearchInput = '';
+                    $scope.streamerSearchInput = '';
                 };
 
                 $scope.back = function () {
@@ -26,6 +30,14 @@
 
                 $scope.nextPage = function () {
                     PickerService.nextPage();
+                };
+
+                $scope.gameSearch = function () {
+                    PickerService.search($scope.gameSearchInput, 'game');
+                };
+
+                $scope.streamerSearch = function () {
+                    PickerService.search($scope.streamerSearchInput, 'streamer');
                 };
 
             }
