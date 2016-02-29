@@ -65,6 +65,7 @@
     <Content Include="css\chat.css" />
     <Content Include="css\chat.min.css" />
     <Content Include="css\chat.styl" />
+    <Content Include="css\streamOverview.styl" />
     <Content Include="css\video-player.css" />
     <Content Include="css\video-player.min.css" />
     <Content Include="css\video-player.styl" />
